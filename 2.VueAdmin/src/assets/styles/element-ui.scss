@@ -1,0 +1,386 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+
+.el-upload {
+    input[type="file"] {
+        display: none !important;
+    }
+}
+
+.el-upload__input {
+    display: none;
+}
+
+.cell {
+    .el-tag {
+        margin-right: 0px;
+    }
+}
+
+.small-padding {
+    .cell {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.fixed-width {
+    .el-button--mini {
+        padding: 7px 10px;
+        width: 60px;
+    }
+}
+
+.status-col {
+    .cell {
+        padding: 0 10px;
+        text-align: center;
+
+        .el-tag {
+            margin-right: 0px;
+        }
+    }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+    .el-upload {
+        width: 100%;
+
+        .el-upload-dragger {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+// dropdown
+.el-dropdown-menu {
+    a {
+        display: block
+    }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+    display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+    box-sizing: content-box;
+}
+
+.el-menu--collapse>div>.el-submenu>.el-submenu__title .el-submenu__icon-arrow {
+    display: none;
+}
+
+.el-select-dropdown .el-select-dropdown__list,
+.el-dropdown-menu {
+    border: 1px solid #3962DD;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #3962DD;
+}
+
+.el-popper[x-placement^=top] .popper__arrow {
+    border-top-color: #3962DD;
+}
+
+.el-date-range-picker .el-picker-panel__body {
+    border: 1px solid #3962DD;
+}
+
+.el-switch.is-checked .el-switch__core {
+    border-color: #3962DD;
+    background-color: #3962DD;
+}
+
+.el-button--text {
+    color: #566880;
+}
+
+.el-button--text:hover {
+    color: #3962DD;
+}
+
+.el-table .el-dropdown-link {
+    color: #3962DD !important;
+}
+
+.el-dropdown-menu__item:hover {
+    color: #949EAD !important;
+    background-color: #EDF4FB !important;
+}
+
+.el-select-dropdown__item.selected {
+    color: #3962DD;
+}
+
+// 弹窗
+.el-dialog {
+    .el-dialog__header .el-dialog__title {
+        font-size: 30px;
+        font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+        font-weight: bold;
+        color: #566880;
+    }
+
+    .el-dialog__footer {
+        height: 100px;
+        background-color: rgba(186, 198, 213, 0.2);
+
+        .dialog-footer {
+            height: 80px;
+            line-height: 80px;
+
+            .el-button {
+                width: 120px;
+                height: 46px;
+    
+                box-shadow: 0px 5px 10px 0px rgba(57, 98, 221, 0.15);
+                border-radius: 5px 5px 5px 5px;
+                font-size: 16px;
+            }
+    
+            .el-button--primary {
+                background: #3962DD;
+    
+                &:hover {
+                    background: #1B44BF;
+                }
+            }
+    
+            .el-button--default {
+                background: #fff;
+                color: #566880;
+    
+                &:hover {
+                    background: #566880;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// 消息框
+.el-message-box {
+    padding-bottom: 0px;
+    .el-message-box__header .el-message-box__title {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+        font-weight: bold;
+        color: #566880;
+    }
+    .el-message-box__btns {
+        height: 100px;
+        line-height: 90px;
+        background: rgba(186, 198, 213, 0.2);
+        .el-button {
+            width: 120px;
+            height: 46px;
+            
+            box-shadow: 0px 5px 10px 0px rgba(57, 98, 221, 0.15);
+            border-radius: 5px 5px 5px 5px;
+            font-size: 16px;
+        }
+
+        .el-button--primary {
+            background: #3962DD !important;
+            color: #fff !important;
+
+            &:hover {
+                background: #1B44BF !important;
+            }
+        }
+
+        .el-button--default {
+            background: #fff;
+            color: #566880;
+
+            &:hover {
+                background: #566880;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// 搜索框
+.app-container {
+
+    .el-form {
+        padding-top: 20px;
+        padding-left: 20px;
+        background-color: #fff;
+        margin-bottom: 23px;
+
+        .el-form-item--small.el-form-item,
+        .el-range-editor {
+            // width: 30%;
+
+            .el-range-separator {
+                height: 46px;
+                line-height: 46px;
+            }
+        }
+        .el-form-item--small .el-form-item__content {
+            margin-right: 10px;
+        }
+        .el-input__inner:focus {
+            border-color: #3962DD;
+        }
+
+        .el-select--small,
+        .el-input,
+        .el-input--small .el-input__inner,
+        .el-range-editor.el-input__inner {
+            height: 46px;
+            line-height: 46px;
+            // width: 288px !important;
+        }
+
+        .el-form-item--small .el-form-item__label {
+            height: 46px;
+            line-height: 46px;
+        }
+
+        .el-button {
+            width: 120px;
+            height: 46px;
+
+            box-shadow: 0px 5px 10px 0px rgba(57, 98, 221, 0.15);
+            border-radius: 5px 5px 5px 5px;
+            font-size: 16px;
+        }
+
+        .el-button--primary {
+            background: #3962DD;
+
+            &:hover {
+                background: #1B44BF;
+            }
+        }
+
+        .el-button--default {
+            background: #aaa;
+            color: #fff;
+
+            &:hover {
+                background: #566880;
+            }
+        }
+
+    }
+
+    .mb8 {
+        margin-bottom: 23px;
+
+        .el-button {
+            // width: 70px;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 30px;
+            border-radius: 5px 5px 5px 5px;
+            opacity: 1;
+        }
+
+
+
+        .el-button--primary {
+            background: #EDF2FF;
+            border: 1px solid #BCD0FF;
+
+            &:hover {
+                background: #3962DD;
+                border: 1px solid #3962DD;
+                color: #fff;
+            }
+        }
+
+        .el-button--success,
+        .el-button--success.is-plain.is-disabled {
+            background: rgba(248, 172, 89, 0.3);
+            border: 1px solid #F8AC59;
+            color: #F8AC59;
+
+            &:hover {
+                background: #3962DD;
+                border: 1px solid #3962DD;
+                color: #fff;
+            }
+        }
+
+        .el-button--danger,
+        .el-button--danger.is-plain.is-disabled {
+            background: #FEEEEE;
+            border: 1px solid #F9ADAB;
+
+            &:hover {
+                background: #E90000;
+                border-radius: 5px 5px 5px 5px;
+                border: 1px solid #E90000;
+                color: #fff;
+            }
+        }
+
+        .el-button--info,
+        .el-button--info.is-plain.is-disabled {
+            background: rgba(26, 179, 148, 0.2);
+            border: 1px solid #1AB394;
+            color: #1AB394;
+
+            &:hover {
+                background: #1AB394;
+                border: 1px solid #1AB394;
+                color: #fff;
+            }
+        }
+
+        .el-button--warning,
+        .el-button--warning.is-plain.is-disabled {
+            background: rgba(35, 198, 200, 0.2);
+            border-radius: 5px 5px 5px 5px;
+            border: 1px solid #23C6C8;
+            color: #23C6C8;
+
+            &:hover {
+                background: #23C6C8;
+                border-radius: 5px 5px 5px 5px;
+                border: 1px solid #23C6C8;
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+.pagination-container {
+    background: transparent !important;
+}
+
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .el-pager li {
+    background-color: transparent;
+    color: #566880;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #3962DD;
+    color: #fff;
+}
